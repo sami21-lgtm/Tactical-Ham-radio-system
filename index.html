@@ -88,6 +88,12 @@
 
     <!-- CENTER MAP PANEL -->
     <div class="map-container">
+      <!-- Search Overlay Box -->
+      <div class="map-search-box">
+        <input type="text" id="location-search" placeholder="Type Country or City..." onkeydown="if(event.key==='Enter') doSearch()" />
+        <button id="search-btn" onclick="doSearch()">SEARCH</button>
+      </div>
+
       <div id="map"></div>
       
       <div class="map-bottom-bar">
@@ -174,7 +180,7 @@
     <span class="ticker-sep">||</span>
     Solar Flux Stabilized
     <span class="ticker-sep">||</span>
-    Tap map to set location
+    Search country or tap map to set location
   </div>
 
   <!-- Leaflet JS CDN -->
